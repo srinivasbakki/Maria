@@ -10,8 +10,8 @@ This will be incremental building - to learn how this interfaces with facebook
 Steps:
     
 1) Host a Heroku application and just print out a Hello world type string: Check
-2) Just put in GET method and check the behavior
-3) 
+2) Just put in GET method and check the behavior: Nothing happened! 
+3) Just check if the print works or only return: 
     
 """
 
@@ -27,8 +27,8 @@ app = Flask(__name__)
 
 
 @app.route('/', methods=['GET'])
-def hello_world():
-    return "Hello web! Iam here"
+def handle_verification():
+    print "Handling verification."
     
 if __name__ == '__main__':
     app.run()
