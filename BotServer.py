@@ -9,8 +9,9 @@ https://tsaprailis.com/2016/06/02/How-to-build-and-deploy-a-Facebook-Messenger-b
 This will be incremental building - to learn how this interfaces with facebook
 Steps:
     
-1) Host a Heroku application and just print out a Hellor world type string
-2)
+1) Host a Heroku application and just print out a Hello world type string: Check
+2) Just put in GET method and check the behavior
+3) 
     
 """
 
@@ -25,7 +26,7 @@ app = Flask(__name__)
 #PAT = ''
 
 
-@app.route('/')
+@app.route('/', methods=['GET'])
 def hello_world():
     return "Hello web! Iam here"
     
